@@ -287,6 +287,36 @@ ul#nav li.current a { color: #F06000; }
    margin-top: 6px;
 }
 
+/*Projects*/
+
+#projects {
+   background: rgb(12, 11, 11);
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#projects span{
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+
+#projects h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #fff;
+}
+
+#projects h4{
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #CCC;
+}
+
+#projects a, #projects a:visited  { color: #11ABB0; }
+#projects a:hover, #projects a:focus { color: #d4cece; }
+
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
