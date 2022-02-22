@@ -316,12 +316,42 @@ ul#nav li.current a { color: #F06000; }
 #projects a, #projects a:visited  { color: #11ABB0; }
 #projects a:hover, #projects a:focus { color: #d4cece; }
 
+/* Skills */
+#skills {
+   background: beige;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+.skill-header{
+   padding-left: 0;
+}
+
+.skill-header span{
+   border-bottom: 3px solid #11ABB0;
+}
+
+/* #skills h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #fff;
+}
+
+#skills h4{
+   font: 25px/30px 'opensans-bold', sans-serif;
+   color: #CCC;
+}
+
+#skills a, #skills a:visited  { color: #11ABB0; }
+#skills a:hover, #skills a:focus { color: #d4cece; } */
 
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
+/* .bars {
 	width: 95%;
 	float: left;
 	padding: 0;
@@ -359,7 +389,7 @@ ul#nav li.current a { color: #F06000; }
   	height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
-}
+} */
 
 .photoshop {
   	width: 60%;
