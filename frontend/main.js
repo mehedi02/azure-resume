@@ -20,3 +20,36 @@ const getVisitCount = () => {
     })
     return count
 }
+
+
+
+// activate animation while scrolling down
+// Create the observer
+const observer = new IntersectionObserver(entries =>{
+    // Loop over the entries
+    entries.forEach(entry => {
+        const python = entry.target.querySelector('.python-bar')
+        const azfun = entry.target.querySelector('.azfun-bar')
+        const k8s = entry.target.querySelector('.k8s-bar')
+        const docker = entry.target.querySelector('.docker-bar')
+        // if the element is visible
+        if (entry.isIntersecting){
+            // Add the animation class
+            // entry.target.classList.add('python-bar')
+            python.classList.add('python-animation')
+            azfun.classList.add("azfun-animation")
+            k8s.classList.add("k8s-animation")
+            docker.classList.add("docker-animation")
+            return
+        }
+
+        // We're not intersecting, so remove the class!
+        python.classList.remove('python-animation')
+        azfun.classList.remove("azfun-animation")
+        k8s.classList.remove("k8s-animation")
+        docker.classList.remove("docker-animation")
+    })
+})
+
+// Tell the observer which elements to track
+observer.observe(document.querySelector('#skills'))

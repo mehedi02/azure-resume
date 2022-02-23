@@ -26,39 +26,50 @@
 
 /* activate the animation */
 
-#python-bar{
-    animation: html-fill 2s forwards;
-}
-@keyframes html-fill{
+
+@keyframes python-fill{
     100%{
         width: 80%;
     }
 }
-
-#azfun-bar{
-    animation: css-fill 2s forwards;
-}
-
-@keyframes css-fill{
-    100%{
-        width: 85%;
+@media (prefers-reduced-motion: no-preference) {
+    .python-animation {
+      animation-name: python-fill;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
     }
 }
 
-#k8s-bar{
-    animation: html-fill 2s forwards;
+
+@keyframes azfun-fill{
+    100%{
+        width: 90%;
+    }
 }
-@keyframes css-fill{
+@media (prefers-reduced-motion: no-preference) {
+    .azfun-animation {
+      animation: azfun-fill 2s forwards;
+    }
+}
+
+@keyframes k8s-fill{
     100%{
         width: 80%;
     }
 }
-
-#docker-bar{
-    animation: html-fill 2s forwards;
+@media (prefers-reduced-motion: no-preference) {
+    .k8s-animation {
+      animation: k8s-fill 2s forwards;
+    }
 }
-@keyframes css-fill{
+
+@keyframes docker-fill{
     100%{
         width: 80%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .docker-animation {
+      animation: docker-fill 2s forwards;
     }
 }
