@@ -236,6 +236,69 @@ ul#nav li.current a { color: #F06000; }
    font-size: 20px;
 }
 
+/* ------------------------------------------------------------------ */
+/* Certification
+/* ------------------------------------------------------------------ */
+
+#cert {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#cert a, #cert a:visited  { color: #11ABB0; }
+#cert a:hover, #cert a:focus { color: #313131; }
+
+#cert h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+#cert h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#cert h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#cert .header-col { padding-top: 9px; }
+#cert .main-col { padding-right: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#cert .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#cert .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#cert .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}
+
+#cert .az-900-pic {
+   /* position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%; */
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   object-fit: cover;
+   object-position: center;
+}
+
 
 /* ------------------------------------------------------------------ */
 /* d. Resume Section
