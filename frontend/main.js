@@ -32,6 +32,8 @@ const observer = new IntersectionObserver(entries =>{
         const azfun = entry.target.querySelector('.azfun-bar')
         const k8s = entry.target.querySelector('.k8s-bar')
         const docker = entry.target.querySelector('.docker-bar')
+        const prometheus = entry.target.querySelector('.prometheus-bar')
+        const grafana = entry.target.querySelector('.grafana-bar')
         // if the element is visible
         if (entry.isIntersecting){
             // Add the animation class
@@ -40,6 +42,8 @@ const observer = new IntersectionObserver(entries =>{
             azfun.classList.add("azfun-animation")
             k8s.classList.add("k8s-animation")
             docker.classList.add("docker-animation")
+            prometheus.classList.add("prometheus-animation")
+            grafana.classList.add("grafana-animation")
             return
         }
 
@@ -48,6 +52,8 @@ const observer = new IntersectionObserver(entries =>{
         azfun.classList.remove("azfun-animation")
         k8s.classList.remove("k8s-animation")
         docker.classList.remove("docker-animation")
+        prometheus.classList.remove("prometheus-animation")
+        grafana.classList.remove("grafana-animation")
     })
 })
 

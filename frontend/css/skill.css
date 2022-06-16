@@ -73,3 +73,25 @@
       animation: docker-fill 2s forwards;
     }
 }
+
+@keyframes prometheus-fill{
+    100%{
+        width: 75%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .prometheus-animation {
+      animation: prometheus-fill 2s forwards;
+    }
+}
+
+@keyframes grafana-fill{
+    100%{
+        width: 75%;
+    }
+}
+@media (prefers-reduced-motion: no-preference) {
+    .grafana-animation {
+      animation: grafana-fill 2s forwards;
+    }
+}
